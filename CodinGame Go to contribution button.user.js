@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         CodinGame Go to destribution button
+// @name         CodinGame Go to contribution button
 // @namespace    https://lopidav.com/
 // @version      0.1
-// @description  Adds "Go to destribution" button to the Clash of Code results page
+// @description  Adds "Go to contribution" button to the Clash of Code results page
 // @author       lopidav
 // @match        https://www.codingame.com/*
 // @require      http://code.jquery.com/jquery-latest.js
