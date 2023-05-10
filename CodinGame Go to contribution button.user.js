@@ -24,7 +24,13 @@ var lastQuestions=[];
             let button = $(`<button class="join-clash-button" style="display: inline-block;">Go to Contribution</button>`);
             button.click(function() {
                 button.css('background-color', '#c9b94b');
-                fetch('services/Contribution/getAcceptedContributions', {method: 'POST', body: `["CLASHOFCODE"]`})
+                fetch("https://www.codingame.com/services/Contribution/getAcceptedContributions", {
+                    "headers": {
+                        "content-type": "application/json;charset=UTF-8",
+                    },
+                    "body": "[\"CLASHOFCODE\"]",
+                    "method": "POST"
+                })
                     .then(r => r.json())
                     .then(d => {
                     let found = true;
