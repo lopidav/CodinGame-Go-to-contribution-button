@@ -36,6 +36,7 @@ var lastQuestions=[];
                     let found = true;
                     for(let i in d) {
                         if(d[i].title==lastQuestionTitle) {
+                            button.css('background-color', '#ecedee');
                             window.open(`https://www.codingame.com/contribute/view/${d[i].publicHandle}`);
                             found = true;
                             break;
